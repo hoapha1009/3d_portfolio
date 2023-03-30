@@ -1,7 +1,6 @@
 import {
   mobile,
-  backend,
-  creator,
+  nextjs,
   web,
   javascript,
   typescript,
@@ -14,11 +13,11 @@ import {
   mongodb,
   git,
   figma,
-  docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
+  reactQuery,
+  vite,
+  mcom,
+  greenAgri,
+  blackwind,
   carrent,
   jobit,
   tripguide,
@@ -81,6 +80,10 @@ const technologies = [
     icon: reactjs
   },
   {
+    name: 'Next JS',
+    icon: nextjs
+  },
+  {
     name: 'Redux Toolkit',
     icon: redux
   },
@@ -109,62 +112,53 @@ const technologies = [
     icon: figma
   },
   {
-    name: 'docker',
-    icon: docker
+    name: 'vite',
+    icon: vite
+  },
+  {
+    name: 'reactQuery',
+    icon: reactQuery
   }
 ]
 
 const experiences = [
   {
-    title: 'React.js Developer',
-    company_name: 'Starbucks',
-    icon: starbucks,
-    iconBg: '#383E56',
-    date: 'March 2020 - April 2021',
+    title: 'Junior Front-end Web Developer',
+    company_name: 'Green Agri',
+    icon: greenAgri,
+    iconBg: '#b9e0cc',
+    date: 'May 2022 - Present',
     points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.'
+      'Developed and maintained code for in-house and client websites primarily using React, NextJS, Typescript and TailwindCSS based on Figma design.',
+      'Build reusable components and front-end libraries for future use.',
+      'Optimize components for maximum performance across a vast array of devices.',
+      'Perform code reviews and bug fixes.'
     ]
   },
   {
-    title: 'React Native Developer',
-    company_name: 'Tesla',
-    icon: tesla,
+    title: 'Junior Front-end Web Developer',
+    company_name: 'MCOM',
+    icon: mcom,
     iconBg: '#E6DEDD',
-    date: 'Jan 2021 - Feb 2022',
+    date: 'Nov 2021 - May 2022',
     points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.'
+      'Maintain and develop web applications using React.js, Nextjs, Typescript and TailwindCSS.',
+      'Optimising components for maximum performance across a vast array of browsers.',
+      'Collaborating with back-end developers and web designers to improve usability, performance.',
+      'Troubleshooting/fixing problems.'
     ]
   },
   {
-    title: 'Web Developer',
-    company_name: 'Shopify',
-    icon: shopify,
+    title: 'Fresher Full-stack Web Developer',
+    company_name: 'Blackwind Software',
+    icon: blackwind,
     iconBg: '#383E56',
-    date: 'Jan 2022 - Jan 2023',
+    date: 'April 2021 - Nov 2022',
     points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
+      'Develop, test and maintain responsive web/mobile apps with elegant UX that delight our users and raise their productivity.',
+      'Joining to support the end-user and solving the emergencies problems',
       'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.'
-    ]
-  },
-  {
-    title: 'Full stack Developer',
-    company_name: 'Meta',
-    icon: meta,
-    iconBg: '#E6DEDD',
-    date: 'Jan 2023 - Present',
-    points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.'
+      'Research, design, develop, and test the platform including API and dashboard.'
     ]
   }
 ]

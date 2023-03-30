@@ -1,7 +1,9 @@
 import { BrowserRouter } from 'react-router-dom'
 import About from './components/About'
+import Experience from './components/Experience'
 import Hero from './components/Hero'
 import Navbar from './components/Navbar'
+import Tech from './components/Tech'
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
           <Hero />
         </div>
         <About />
+        <Experience />
+        <Tech />
         {/*
         <Experience />
         <Tech />
