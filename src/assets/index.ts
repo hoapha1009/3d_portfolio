@@ -1,4 +1,4 @@
-import logo from './logo.webp'
+import logo from './logo.svg'
 import backend from './backend.png'
 import creator from './creator.png'
 import mobile from './mobile.png'
@@ -25,11 +25,12 @@ import threejs from './tech/threejs.svg'
 import blackwind from './company/blackwind.jpg'
 import greenAgri from './company/green-agri.png'
 import mcom from './company/mcom.png'
-import carrent from './carrent.png'
-import jobit from './jobit.png'
-import shopee from './shopee-clone.png'
-import crow from './crow-shop.png'
-import tripguide from './tripguide.png'
+import shopee from './projects/shopee-clone.png'
+import crow from './projects/crow-shop.png'
+import portfolio from './projects/portfolio.png'
+import ueh from './education/ueh.png'
+import dntc from './education/dntc.jpg'
+import live from './live.png'
 
 export {
   logo,
@@ -56,12 +57,13 @@ export {
   blackwind,
   greenAgri,
   mcom,
-  carrent,
-  jobit,
-  tripguide,
   vite,
   reactQuery,
   nextjs,
   shopee,
-  crow
+  crow,
+  ueh,
+  dntc,
+  live,
+  portfolio
 }

@@ -1,28 +1,28 @@
 import {
-  mobile,
-  nextjs,
-  web,
-  javascript,
-  typescript,
-  html,
-  css,
-  reactjs,
-  redux,
-  tailwind,
-  nodejs,
-  mongodb,
-  git,
-  figma,
-  reactQuery,
-  vite,
-  mcom,
-  greenAgri,
   blackwind,
-  carrent,
-  jobit,
-  threejs,
+  crow,
+  css,
+  dntc,
+  figma,
+  git,
+  greenAgri,
+  html,
+  javascript,
+  mcom,
+  mobile,
+  mongodb,
+  nextjs,
+  nodejs,
+  portfolio,
+  reactjs,
+  reactQuery,
+  redux,
   shopee,
-  crow
+  tailwind,
+  typescript,
+  ueh,
+  vite,
+  web
 } from '../assets'
 
 export const navLinks = [
@@ -31,12 +31,41 @@ export const navLinks = [
     title: 'About'
   },
   {
-    id: 'work',
-    title: 'Work'
+    id: 'experience',
+    title: 'Work Experience'
+  },
+  {
+    id: 'education',
+    title: 'Education'
+  },
+  {
+    id: 'projects',
+    title: 'Projects'
   },
   {
     id: 'contact',
     title: 'Contact'
+  }
+]
+
+const education = [
+  {
+    title: 'Bachelor of Information Technology',
+    school_name: 'Technical College, Dong Nai',
+    icon: dntc,
+    iconBg: '#E6DEDD',
+    date: 'Sep 2017 - Nov 2020',
+    diploma: 'Excellent',
+    point: '3.65/4'
+  },
+  {
+    title: 'Bachelor of Business Administration',
+    school_name: 'University of Economic, HCM city',
+    icon: ueh,
+    iconBg: '#E6DEDD',
+    date: 'Sep 2012 - Aug 2018',
+    diploma: 'Good',
+    point: '8.1/10'
   }
 ]
 
@@ -100,10 +129,10 @@ const technologies = [
     name: 'MongoDB',
     icon: mongodb
   },
-  {
-    name: 'Three JS',
-    icon: threejs
-  },
+  // {
+  //   name: 'Three JS',
+  //   icon: threejs
+  // },
   {
     name: 'git',
     icon: git
@@ -211,9 +240,9 @@ const projects = [
         color: 'green-text-gradient'
       }
     ],
-    image: shopee,
-    source_code_link: 'https://github.com/hoapha1009/shopee-clone',
-    live_demo_link: 'https://shopee-clone-eosin.vercel.app/'
+    image: portfolio,
+    source_code_link: 'https://github.com/hoapha1009/3d_portfolio',
+    live_demo_link: 'https://3d-portfolio-neon.vercel.app/'
   },
   {
     name: 'Shopee Clone',
@@ -269,8 +298,8 @@ const projects = [
     ],
     image: crow,
     source_code_link: 'https://github.com/hoapha1009/crown-clothing',
-    live_demo_link: 'https://crow-clothing-shop.vercel.app/'
+    live_demo_link: 'https://crown-clothing-puce.vercel.app/'
   }
 ]
 
-export { services, technologies, experiences, testimonials, projects }
+export { services, technologies, experiences, testimonials, projects, education }

@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import SectionWrapper from '../hoc/SectionWrapper'
 import { styles } from '../styles'
 import { fadeIn, textVariant } from '../utils/motion'
+import ParallaxTilt from 'react-parallax-tilt'
 
 // interface ServiceCardProps {
 //   title: string
@@ -10,14 +11,7 @@ import { fadeIn, textVariant } from '../utils/motion'
 // }
 
 // const ServiceCard = ({ index, title, icon }: ServiceCardProps) => (
-//   <Tilt
-//     className='w-full xs:w-[250px]'
-//     options={{
-//       max: 45,
-//       scale: 1,
-//       speed: 450
-//     }}
-//   >
+//   <ParallaxTilt tiltMaxAngleX={45} tiltMaxAngleY={45} scale={1} transitionSpeed={450} className='w-full xs:w-[250px]'>
 //     <motion.div
 //       variants={fadeIn('right', 'spring', index * 0.5, 0.75)}
 //       className='green-pink-gradient w-full rounded-[20px] p-[1px] shadow-card'
@@ -28,25 +22,32 @@ import { fadeIn, textVariant } from '../utils/motion'
 //         <h3 className='text-center text-[20px] font-bold text-white'>{title}</h3>
 //       </div>
 //     </motion.div>
-//   </Tilt>
+//   </ParallaxTilt>
 // )
 
 const About = () => {
   return (
-    <div className='container'>
-      <motion.div variants={textVariant(0)}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
-      </motion.div>
+    <div id='about' className='flex flex-col-reverse gap-10 overflow-hidden xl:mt-12 xl:flex-row'>
+      <div className='flex-1'>
+        <motion.div variants={textVariant(0)}>
+          <p className={styles.sectionSubText}>Introduction</p>
+          <h2 className={styles.sectionHeadText}>Overview.</h2>
+        </motion.div>
 
-      <motion.p variants={fadeIn('', '', 0.1, 1)} className='mt-4 max-w-4xl text-[17px] leading-[30px] text-secondary'>
-        Highly motivated and skilled front-end developer with nearly 2 years of experience building and implementing
-        user-friendly and visually appealing websites. Proficient in HTML, CSS, JavaScript and Typescript. Strong
-        ability to create responsive design and cross-browser compatibility. Experience in working with popular
-        front-end frameworks such as React and NextJS. Ability to work efficiently in a fast-paced environment and
-        deliver projects on time and within budget. Strong problem-solving skills and attention to detail. Committed to
-        staying up-to-date with the latest front-end technologies and industry trends.
-      </motion.p>
+        <motion.p
+          variants={fadeIn('', '', 0.1, 1)}
+          className='mt-4 max-w-4xl text-[17px] leading-[30px] text-secondary'
+        >
+          Highly motivated and skilled front-end developer with nearly 2 years of experience building and implementing
+          user-friendly and visually appealing websites. Proficient in HTML, CSS, JavaScript and Typescript. Strong
+          ability to create responsive design and cross-browser compatibility. Experience in working with popular
+          front-end frameworks such as React and NextJS. Ability to work efficiently in a fast-paced environment and
+          deliver projects on time and within budget. Strong problem-solving skills and attention to detail. Committed
+          to staying up-to-date with the latest front-end technologies and industry trends.
+        </motion.p>
+      </div>
+
+      {/* <div className='flex-1'></div> */}
 
       {/* <div className='mt-20 flex flex-wrap justify-center gap-10'>
         {services.map((service, index) => (

@@ -1,10 +1,14 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import useCurrentScrollingSectionID from '../hooks/useCurrentScrollingSectionID'
 import { close, logo, menu } from '../assets'
 import { navLinks } from '../constants'
 import { styles } from '../styles'
 
+const SECTION_ID_LIST = navLinks.map((link) => link.id)
+
 const Navbar = () => {
+  const [activeId] = useCurrentScrollingSectionID(SECTION_ID_LIST, 76)
   const [active, setActive] = useState('')
   const [toggle, setToggle] = useState(false)
   const [scrolled, setScrolled] = useState(false)
@@ -12,16 +16,16 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY
-      if (scrollTop > 100) {
+      if (scrollTop > 85) {
         setScrolled(true)
       } else {
         setScrolled(false)
       }
     }
 
-    window.addEventListener('scroll', handleScroll)
+    window.addEventListener('handleScroll', handleScroll)
 
-    return () => window.removeEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('handleScroll', handleScroll)
   }, [])
 
   return (
@@ -39,20 +43,20 @@ const Navbar = () => {
             window.scrollTo(0, 0)
           }}
         >
-          <img src={logo} alt='logo' className='h-9 w-9 object-contain' />
-          <p className='flex cursor-pointer text-[18px] font-bold text-white '>
+          <img src={logo} alt='logo' className='h-12 w-12 object-contain' />
+          <p className='flex cursor-pointer text-[20px] font-bold text-white '>
             HaFa &nbsp;
             <span className='hidden sm:block'> | Web Developer</span>
           </p>
         </Link>
 
-        <ul className='hidden list-none flex-row gap-10 sm:flex'>
+        <ul className='hidden list-none flex-row gap-10 lg:flex'>
           {navLinks.map((nav) => (
             <li
               key={nav.id}
               className={`${
-                active === nav.title ? 'text-white' : 'text-secondary'
-              } cursor-pointer text-[18px] font-medium hover:text-white`}
+                active === nav.title || activeId === nav.id ? 'font-semibold text-white' : 'font-medium text-secondary'
+              } cursor-pointer text-sm hover:text-white lg:text-base`}
               onClick={() => setActive(nav.title)}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
@@ -60,7 +64,7 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <div className='flex flex-1 items-center justify-end sm:hidden'>
+        <div className='flex flex-1 items-center justify-end lg:hidden'>
           <img
             src={toggle ? close : menu}
             alt='menu'
