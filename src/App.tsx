@@ -4,6 +4,7 @@ import Experience from './components/Experience'
 import Hero from './components/Hero'
 import Navbar from './components/Navbar'
 import Tech from './components/Tech'
+import Works from './components/Work'
 
 function App() {
   return (
@@ -16,10 +17,8 @@ function App() {
         <About />
         <Experience />
         <Tech />
-        {/*
-        <Experience />
-        <Tech />
-        <Works /> */}
+
+        <Works />
         <div className='relative z-0'>
           {/* <Contact />
           <StarsCanvas /> */}

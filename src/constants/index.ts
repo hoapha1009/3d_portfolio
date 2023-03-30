@@ -20,8 +20,9 @@ import {
   blackwind,
   carrent,
   jobit,
-  tripguide,
-  threejs
+  threejs,
+  shopee,
+  crow
 } from '../assets'
 
 export const navLinks = [
@@ -189,16 +190,54 @@ const testimonials = [
 
 const projects = [
   {
-    name: 'Car Rent',
+    name: 'Portfolio',
     description:
-      'Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.',
+      'The purpose of this project is to build an online WebGL portfolio with the purpose of introducing myself and showcasing the skills and experience that I have gained. This portfolio utilizes modern technologies such as ReactJS, ThreeJS, TailwindCSS, and VietJS.',
     tags: [
       {
         name: 'react',
         color: 'blue-text-gradient'
       },
       {
-        name: 'mongodb',
+        name: 'threejs',
+        color: 'green-text-gradient'
+      },
+      {
+        name: 'tailwind',
+        color: 'pink-text-gradient'
+      },
+      {
+        name: 'vitejs',
+        color: 'green-text-gradient'
+      }
+    ],
+    image: shopee,
+    source_code_link: 'https://github.com/hoapha1009/shopee-clone',
+    live_demo_link: 'https://shopee-clone-eosin.vercel.app/'
+  },
+  {
+    name: 'Shopee Clone',
+    description:
+      'The purpose of this project is to create a clone of the popular e-commerce platform Shopee using modern web development technologies. The website will have similar functionalities to the original Shopee, such as product listings, shopping cart, payment processing, and order tracking. Additionally, the project will incorporate modern UI/UX design principles and responsive layouts for an optimal user experience across various devices.',
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient'
+      },
+      {
+        name: 'react-query',
+        color: 'green-text-gradient'
+      },
+      {
+        name: 'typescript',
+        color: 'green-text-gradient'
+      },
+      {
+        name: 'vitejs',
+        color: 'green-text-gradient'
+      },
+      {
+        name: 'react.i18next',
         color: 'green-text-gradient'
       },
       {
@@ -206,20 +245,21 @@ const projects = [
         color: 'pink-text-gradient'
       }
     ],
-    image: carrent,
-    source_code_link: 'https://github.com/'
+    image: shopee,
+    source_code_link: 'https://github.com/hoapha1009/shopee-clone',
+    live_demo_link: 'https://shopee-clone-eosin.vercel.app/'
   },
   {
-    name: 'Job IT',
+    name: 'Crow Clothing Shop',
     description:
-      'Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.',
+      'My personal project is an online clothing store aimed at providing customers with a seamless shopping experience. Using modern front-end technologies like ReactJS and Redux, I have designed and developed a visually appealing and user-friendly website that is optimized for both desktop and mobile devices.',
     tags: [
       {
         name: 'react',
         color: 'blue-text-gradient'
       },
       {
-        name: 'restapi',
+        name: 'Redux',
         color: 'green-text-gradient'
       },
       {
@@ -227,29 +267,9 @@ const projects = [
         color: 'pink-text-gradient'
       }
     ],
-    image: jobit,
-    source_code_link: 'https://github.com/'
-  },
-  {
-    name: 'Trip Guide',
-    description:
-      'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
-    tags: [
-      {
-        name: 'nextjs',
-        color: 'blue-text-gradient'
-      },
-      {
-        name: 'supabase',
-        color: 'green-text-gradient'
-      },
-      {
-        name: 'css',
-        color: 'pink-text-gradient'
-      }
-    ],
-    image: tripguide,
-    source_code_link: 'https://github.com/'
+    image: crow,
+    source_code_link: 'https://github.com/hoapha1009/crown-clothing',
+    live_demo_link: 'https://crow-clothing-shop.vercel.app/'
   }
 ]
 

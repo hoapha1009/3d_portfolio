@@ -27,6 +27,8 @@ import greenAgri from './company/green-agri.png'
 import mcom from './company/mcom.png'
 import carrent from './carrent.png'
 import jobit from './jobit.png'
+import shopee from './shopee-clone.png'
+import crow from './crow-shop.png'
 import tripguide from './tripguide.png'
 
 export {
@@ -59,5 +61,7 @@ export {
   tripguide,
   vite,
   reactQuery,
-  nextjs
+  nextjs,
+  shopee,
+  crow
 }
