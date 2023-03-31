@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion'
 import SectionWrapper from '../hoc/SectionWrapper'
 import { styles } from '../styles'
-import { fadeIn, textVariant } from '../utils/motion'
-import ParallaxTilt from 'react-parallax-tilt'
+import { slideIn, textVariant } from '../utils/motion'
+import VanCanvas from './canvas/Van'
 
 // interface ServiceCardProps {
 //   title: string
@@ -27,27 +27,27 @@ import ParallaxTilt from 'react-parallax-tilt'
 
 const About = () => {
   return (
-    <div id='about' className='flex flex-col-reverse gap-10 overflow-hidden xl:mt-12 xl:flex-row'>
-      <div className='flex-1'>
-        <motion.div variants={textVariant(0)}>
-          <p className={styles.sectionSubText}>Introduction</p>
-          <h2 className={styles.sectionHeadText}>Overview.</h2>
+    <div id='about' className=''>
+      <motion.div variants={textVariant(0)}>
+        <p className={styles.sectionSubText}>Introduction</p>
+        <h2 className={styles.sectionHeadText}>Overview.</h2>
+      </motion.div>
+      <div className='flex flex-col-reverse gap-10 overflow-hidden xl:flex-row'>
+        <div className='w-full shrink-0 grow-0 xl:w-1/2'>
+          <motion.p variants={slideIn('left', 'tween', 0.2, 1)} className='mt-4 text-lg leading-[30px] text-secondary'>
+            Highly motivated and skilled front-end developer with nearly 2 years of experience building and implementing
+            user-friendly and visually appealing websites. Proficient in HTML, CSS, JavaScript and Typescript. Strong
+            ability to create responsive design and cross-browser compatibility. Experience in working with popular
+            front-end frameworks such as React and NextJS. Ability to work efficiently in a fast-paced environment and
+            deliver projects on time and within budget. Strong problem-solving skills and attention to detail. Committed
+            to staying up-to-date with the latest front-end technologies and industry trends.
+          </motion.p>
+        </div>
+
+        <motion.div variants={slideIn('right', 'tween', 0.2, 1)} className='h-[380px] flex-1 md:h-[450px] xl:h-auto'>
+          <VanCanvas />
         </motion.div>
-
-        <motion.p
-          variants={fadeIn('', '', 0.1, 1)}
-          className='mt-4 max-w-4xl text-[17px] leading-[30px] text-secondary'
-        >
-          Highly motivated and skilled front-end developer with nearly 2 years of experience building and implementing
-          user-friendly and visually appealing websites. Proficient in HTML, CSS, JavaScript and Typescript. Strong
-          ability to create responsive design and cross-browser compatibility. Experience in working with popular
-          front-end frameworks such as React and NextJS. Ability to work efficiently in a fast-paced environment and
-          deliver projects on time and within budget. Strong problem-solving skills and attention to detail. Committed
-          to staying up-to-date with the latest front-end technologies and industry trends.
-        </motion.p>
       </div>
-
-      {/* <div className='flex-1'></div> */}
 
       {/* <div className='mt-20 flex flex-wrap justify-center gap-10'>
         {services.map((service, index) => (
