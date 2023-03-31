@@ -3,20 +3,20 @@ import { Canvas } from '@react-three/fiber'
 import { Suspense } from 'react'
 import CanvasLoader from '../Loader'
 
-const Van = () => {
-  const van = useGLTF('./piggy_van/squid_game__pinksoldier.glb')
+const Solider = () => {
+  const solider = useGLTF('./solider/squid_game__pinksoldier.glb')
 
   return (
     <mesh>
       <hemisphereLight intensity={0.15} groundColor='black' />
       <spotLight position={[-20, 50, 10]} angle={0.12} penumbra={1} intensity={1} castShadow shadow-mapSize={1024} />
       <pointLight intensity={1} />
-      <primitive object={van.scene} scale={0.1} position={[0, -4.5, 0]} />
+      <primitive object={solider.scene} scale={0.1} position={[0, -4.5, 0]} />
     </mesh>
   )
 }
 
-const VanCanvas = () => {
+const SoliderCanvas = () => {
   return (
     <Canvas
       shadows
@@ -33,7 +33,7 @@ const VanCanvas = () => {
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
-        <Van />
+        <Solider />
 
         <Preload all />
       </Suspense>
@@ -41,4 +41,4 @@ const VanCanvas = () => {
   )
 }
 
-export default VanCanvas
+export default SoliderCanvas

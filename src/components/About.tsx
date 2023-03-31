@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import SectionWrapper from '../hoc/SectionWrapper'
 import { styles } from '../styles'
 import { slideIn, textVariant } from '../utils/motion'
-import VanCanvas from './canvas/Van'
+import SoliderCanvas from './canvas/Solider'
 
 // interface ServiceCardProps {
 //   title: string
@@ -45,7 +45,7 @@ const About = () => {
         </div>
 
         <motion.div variants={slideIn('right', 'tween', 0.2, 1)} className='h-[380px] flex-1 md:h-[450px] xl:h-auto'>
-          <VanCanvas />
+          <SoliderCanvas />
         </motion.div>
       </div>
 

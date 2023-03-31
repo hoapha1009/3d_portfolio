@@ -12,6 +12,7 @@ const Navbar = () => {
   const [active, setActive] = useState('')
   const [toggle, setToggle] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  console.log('🚀 ~ file: Navbar.tsx:15 ~ Navbar ~ scrolled:', scrolled)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,9 +24,9 @@ const Navbar = () => {
       }
     }
 
-    window.addEventListener('handleScroll', handleScroll)
+    window.addEventListener('scroll', handleScroll)
 
-    return () => window.removeEventListener('handleScroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
   return (
