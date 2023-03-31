@@ -33,6 +33,7 @@ const ExperienceCard = ({ experience }: ExperienceCardProps) => {
             src={experience.icon}
             alt={experience.company_name}
             className='h-[60%] w-[60%] rounded-full object-contain'
+            style={{ background: 'white' }}
           />
         </div>
       }

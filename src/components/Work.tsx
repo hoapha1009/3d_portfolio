@@ -5,6 +5,7 @@ import { projects } from '../constants'
 import { SectionWrapper } from '../hoc'
 import { styles } from '../styles'
 import { fadeIn, textVariant } from '../utils/motion'
+import { Link } from 'react-router-dom'
 
 interface ProjectCardProps {
   index: number
@@ -28,36 +29,33 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
       >
         <div className='flex-1'>
           <div className='relative w-full'>
-            <img
-              src={image}
-              alt='project_image'
-              className='h-full w-full cursor-pointer rounded-2xl object-cover'
-              onClick={() => window.open(live_demo_link, '_blank')}
-            />
+            <Link to={live_demo_link} target='_blank' className=''>
+              <img src={image} alt={name} className='h-full w-full rounded-2xl object-cover' />
+            </Link>
 
             <div className='card-img_hover absolute inset-0 m-3 flex justify-end'>
               <div
                 onClick={() => window.open(source_code_link, '_blank')}
-                className='black-gradient flex h-10 w-10 cursor-pointer items-center justify-center rounded-full'
+                className='black-gradient flex h-10 w-10 items-center justify-center rounded-full'
               >
                 <img src={github} alt='source code' className='h-1/2 w-1/2 object-contain' />
               </div>
             </div>
           </div>
 
-          <div className='cursor-pointer pt-5' onClick={() => window.open(live_demo_link, '_blank')}>
+          <Link to={live_demo_link} target='_blank' className='h-full pt-5'>
             <h3 className='text-[24px] font-bold text-white'>{name}</h3>
             <p className='mt-2 text-[14px] text-secondary'>{description}</p>
-          </div>
+          </Link>
         </div>
 
-        <div className='flex cursor-pointer flex-wrap gap-2 pt-4' onClick={() => window.open(live_demo_link, '_blank')}>
+        <Link to={live_demo_link} target='_blank' className='flex flex-wrap gap-2 pt-4'>
           {tags.map((tag) => (
             <p key={`${name}-${tag.name}`} className={`text-[14px] ${tag.color}`}>
               #{tag.name}
             </p>
           ))}
-        </div>
+        </Link>
       </ParallaxTilt>
     </motion.div>
   )

@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import SectionWrapper from '../hoc/SectionWrapper'
 import { styles } from '../styles'
 import { slideIn, textVariant } from '../utils/motion'
-import SoliderCanvas from './canvas/Solider'
+import RobotCanvas from './canvas/Robot'
 
 // interface ServiceCardProps {
 //   title: string
@@ -33,19 +33,20 @@ const About = () => {
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
       <div className='flex flex-col-reverse gap-10 overflow-hidden xl:flex-row'>
-        <div className='w-full shrink-0 grow-0 xl:w-1/2'>
-          <motion.p variants={slideIn('left', 'tween', 0.2, 1)} className='mt-4 text-lg leading-[30px] text-secondary'>
-            Highly motivated and skilled front-end developer with nearly 2 years of experience building and implementing
-            user-friendly and visually appealing websites. Proficient in HTML, CSS, JavaScript and Typescript. Strong
-            ability to create responsive design and cross-browser compatibility. Experience in working with popular
-            front-end frameworks such as React and NextJS. Ability to work efficiently in a fast-paced environment and
-            deliver projects on time and within budget. Strong problem-solving skills and attention to detail. Committed
-            to staying up-to-date with the latest front-end technologies and industry trends.
-          </motion.p>
-        </div>
+        <motion.div
+          variants={slideIn('left', 'tween', 0.2, 1)}
+          className='mt-4  flex-[0.75] text-lg leading-[30px] text-secondary'
+        >
+          I understand that a successful business relies on a great app, and that's where I come in. As a highly skilled
+          software developer with expertise in JavaScript, Typescript, React, Next.js. I have the tools and experience
+          necessary to create efficient, scalable, and user-friendly solutions that can solve real-world problems. I am
+          passionate about learning and collaborating closely with my clients to ensure that their vision is brought to
+          life. My goal is to not only meet but exceed your expectations by delivering top-quality results in a timely
+          and professional manner. Let's work together to turn your ideas into reality.
+        </motion.div>
 
-        <motion.div variants={slideIn('right', 'tween', 0.2, 1)} className='h-[380px] flex-1 md:h-[450px] xl:h-auto'>
-          <SoliderCanvas />
+        <motion.div variants={slideIn('right', 'tween', 0.2, 1)} className='h-[380px] md:h-[450px] xl:h-auto xl:flex-1'>
+          <RobotCanvas />
         </motion.div>
       </div>
 

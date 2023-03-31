@@ -35,6 +35,10 @@ export const navLinks = [
     title: 'Work Experience'
   },
   {
+    id: 'tech',
+    title: 'Tech'
+  },
+  {
     id: 'education',
     title: 'Education'
   },
@@ -237,7 +241,7 @@ const projects = [
       },
       {
         name: 'vitejs',
-        color: 'green-text-gradient'
+        color: 'orange-text-gradient'
       }
     ],
     image: portfolio,
@@ -259,15 +263,15 @@ const projects = [
       },
       {
         name: 'typescript',
-        color: 'green-text-gradient'
+        color: 'purple-text-gradient'
       },
       {
         name: 'vitejs',
-        color: 'green-text-gradient'
+        color: 'orange-text-gradient'
       },
       {
         name: 'react.i18next',
-        color: 'green-text-gradient'
+        color: 'yellow-text-gradient'
       },
       {
         name: 'tailwind',
