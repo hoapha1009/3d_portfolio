@@ -1,7 +1,7 @@
 import {
   blackwind,
-  crow,
   css,
+  dalle,
   dntc,
   figma,
   git,
@@ -14,8 +14,8 @@ import {
   nextjs,
   nodejs,
   portfolio,
-  reactjs,
   reactQuery,
+  reactjs,
   redux,
   shopee,
   tailwind,
@@ -225,7 +225,7 @@ const projects = [
   {
     name: 'Portfolio',
     description:
-      'The purpose of this project is to build an online WebGL portfolio with the purpose of introducing myself and showcasing the skills and experience that I have gained. This portfolio utilizes modern technologies such as ReactJS, ThreeJS, TailwindCSS, and VietJS.',
+      'The purpose of this project is to build an online WebGL portfolio with the purpose of introducing myself and showcasing the skills and experience that I have gained. This portfolio utilizes modern technologies such as ReactJS, ThreeJS, TailwindCSS, and VietJS. If you would like to get in touch, you can visit the contact section.!',
     tags: [
       {
         name: 'react',
@@ -233,7 +233,7 @@ const projects = [
       },
       {
         name: 'threejs',
-        color: 'green-text-gradient'
+        color: 'yellow-text-gradient'
       },
       {
         name: 'tailwind',
@@ -242,6 +242,10 @@ const projects = [
       {
         name: 'vitejs',
         color: 'orange-text-gradient'
+      },
+      {
+        name: 'typescript',
+        color: 'purple-text-gradient'
       }
     ],
     image: portfolio,
@@ -251,7 +255,7 @@ const projects = [
   {
     name: 'Shopee Clone',
     description:
-      'The purpose of this project is to create a clone of the popular e-commerce platform Shopee using modern web development technologies. The website will have similar functionalities to the original Shopee, such as product listings, shopping cart, payment processing, and order tracking. Additionally, the project will incorporate modern UI/UX design principles and responsive layouts for an optimal user experience across various devices.',
+      'The purpose of this project is to create a clone of the popular e-commerce platform Shopee using modern web development technologies. The website will have similar functionalities to the original Shopee, such as product listings, shopping cart and profile account. Additionally, the project will incorporate modern UI/UX design principles and responsive layouts for an optimal user experience across various devices.',
     tags: [
       {
         name: 'react',
@@ -283,26 +287,42 @@ const projects = [
     live_demo_link: 'https://shopee-clone-eosin.vercel.app/'
   },
   {
-    name: 'Crow Clothing Shop',
+    name: '3D Shirt AI',
     description:
-      'My personal project is an online clothing store aimed at providing customers with a seamless shopping experience. Using modern front-end technologies like ReactJS and Redux, I have designed and developed a visually appealing and user-friendly website that is optimized for both desktop and mobile devices.',
+      'This is a personal project that allows you to design your own T-shirt using a variety of color options and logo images. The project also includes a self-generated logo feature using DallE AI, adding a personal touch to your design. Built using React, Node.js, Three.js, and Tailwind CSS, this project provides a fun and creative way to design a unique T-shirt that you can easily download and share.',
     tags: [
       {
         name: 'react',
         color: 'blue-text-gradient'
       },
       {
-        name: 'Redux',
+        name: 'DallE',
+        color: 'green-dark-text-gradient'
+      },
+      {
+        name: 'typescript',
+        color: 'purple-text-gradient'
+      },
+      {
+        name: 'vitejs',
+        color: 'orange-text-gradient'
+      },
+      {
+        name: 'threejs',
+        color: 'yellow-text-gradient'
+      },
+      {
+        name: 'NodeJs',
         color: 'green-text-gradient'
       },
       {
-        name: 'scss',
+        name: 'tailwind',
         color: 'pink-text-gradient'
       }
     ],
-    image: crow,
-    source_code_link: 'https://github.com/hoapha1009/crown-clothing',
-    live_demo_link: 'https://crown-clothing-puce.vercel.app/'
+    image: dalle,
+    source_code_link: 'https://github.com/hoapha1009/3d_shirt_dalle',
+    live_demo_link: 'https://3d-shirt-dalle.vercel.app/'
   }
 ]
 
