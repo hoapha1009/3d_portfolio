@@ -1,6 +1,7 @@
 import { BrowserRouter } from 'react-router-dom'
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.min.css'
 import About from './components/About'
-import { StarsCanvas } from './components/canvas'
 import Contact from './components/Contact.jsx'
 import Education from './components/Education'
 import Experience from './components/Experience'
@@ -8,6 +9,7 @@ import Hero from './components/Hero'
 import Navbar from './components/Navbar'
 import Tech from './components/Tech'
 import Works from './components/Work'
+import { StarsCanvas } from './components/canvas'
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
           <StarsCanvas />
         </div>
       </div>
+
+      <ToastContainer />
     </BrowserRouter>
   )
 }
