@@ -161,25 +161,12 @@ const experiences = [
     company_name: 'Green Agri',
     icon: greenAgri,
     iconBg: '#b9e0cc',
-    date: 'May 2022 - Present',
+    date: 'Nov 2021 - Present',
     points: [
-      'Developed and maintained code for in-house and client websites primarily using React, NextJS, Typescript and TailwindCSS based on Figma design.',
+      'Developed and maintained code for in-house and client websites primarily using React, NextJS, Typescript, GraphQL and TailwindCSS based on Figma design.',
       'Build reusable components and front-end libraries for future use.',
       'Optimize components for maximum performance across a vast array of devices.',
       'Perform code reviews and bug fixes.'
-    ]
-  },
-  {
-    title: 'Junior Front-end Web Developer',
-    company_name: 'MCOM',
-    icon: mcom,
-    iconBg: '#E6DEDD',
-    date: 'Nov 2021 - May 2022',
-    points: [
-      'Maintain and develop web applications using React.js, Nextjs, Typescript and TailwindCSS.',
-      'Optimising components for maximum performance across a vast array of browsers.',
-      'Collaborating with back-end developers and web designers to improve usability, performance.',
-      'Troubleshooting/fixing problems.'
     ]
   },
   {
@@ -187,7 +174,7 @@ const experiences = [
     company_name: 'Blackwind Software',
     icon: blackwind,
     iconBg: '#383E56',
-    date: 'April 2021 - Nov 2022',
+    date: 'February 2021 - Nov 2022',
     points: [
       'Develop, test and maintain responsive web/mobile apps with elegant UX that delight our users and raise their productivity.',
       'Joining to support the end-user and solving the emergencies problems',
