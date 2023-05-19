@@ -31,6 +31,7 @@ import mcom from './company/mcom.png'
 import dalle from './projects/dalle.png'
 import portfolio from './projects/portfolio.png'
 import shopee from './projects/shopee-clone.png'
+import airbnb from './projects/airbnb-clone.png'
 
 import dntc from './education/dntc.jpg'
 import ueh from './education/ueh.png'
@@ -66,6 +67,7 @@ export {
   reactQuery,
   nextjs,
   shopee,
+  airbnb,
   ueh,
   dntc,
   live,

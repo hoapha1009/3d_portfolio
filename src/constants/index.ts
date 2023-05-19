@@ -17,6 +17,7 @@ import {
   reactQuery,
   reactjs,
   redux,
+  airbnb,
   shopee,
   tailwind,
   typescript,
@@ -210,34 +211,38 @@ const testimonials = [
 
 const projects = [
   {
-    name: 'Portfolio',
+    name: 'AirBnB',
     description:
-      'The purpose of this project is to build an online WebGL portfolio with the purpose of introducing myself and showcasing the skills and experience that I have gained. This portfolio utilizes modern technologies such as ReactJS, ThreeJS, TailwindCSS, and VietJS. If you would like to get in touch, you can visit the contact section.!',
+      'This is a repository for a Full Stack Airbnb Clone with Next.js 13 App Router: React, Tailwind, Prisma, MongoDB, NextAuth. Booking / Reservation system. Google, Github, credential authentication. Creation and deletion of listings, reservations, properties. Advanced search algorithm by category, date range, map location, number of guests, rooms and bathrooms. ',
     tags: [
       {
-        name: 'react',
+        name: 'React',
         color: 'blue-text-gradient'
       },
       {
-        name: 'threejs',
-        color: 'yellow-text-gradient'
+        name: 'NextJs 13',
+        color: 'green-text-gradient'
       },
       {
-        name: 'tailwind',
-        color: 'pink-text-gradient'
+        name: 'Typescript',
+        color: 'purple-text-gradient'
       },
       {
-        name: 'vitejs',
+        name: 'NextAuth',
         color: 'orange-text-gradient'
       },
       {
-        name: 'typescript',
-        color: 'purple-text-gradient'
+        name: 'Prisma',
+        color: 'yellow-text-gradient'
+      },
+      {
+        name: 'MongoDB',
+        color: 'pink-text-gradient'
       }
     ],
-    image: portfolio,
-    source_code_link: 'https://github.com/hoapha1009/3d_portfolio',
-    live_demo_link: 'https://3d-portfolio-neon.vercel.app/'
+    image: airbnb,
+    source_code_link: 'https://github.com/hoapha1009/airbnb_clone/',
+    live_demo_link: 'https://stay-connect.vercel.app/'
   },
   {
     name: 'Shopee Clone',
@@ -245,27 +250,27 @@ const projects = [
       'The purpose of this project is to create a clone of the popular e-commerce platform Shopee using modern web development technologies. The website will have similar functionalities to the original Shopee, such as product listings, shopping cart and profile account. Additionally, the project will incorporate modern UI/UX design principles and responsive layouts for an optimal user experience across various devices.',
     tags: [
       {
-        name: 'react',
+        name: 'React',
         color: 'blue-text-gradient'
       },
       {
-        name: 'react-query',
+        name: 'React query',
         color: 'green-text-gradient'
       },
       {
-        name: 'typescript',
+        name: 'Typescript',
         color: 'purple-text-gradient'
       },
       {
-        name: 'vitejs',
+        name: 'Vitejs',
         color: 'orange-text-gradient'
       },
       {
-        name: 'react.i18next',
+        name: 'React.i18next',
         color: 'yellow-text-gradient'
       },
       {
-        name: 'tailwind',
+        name: 'Tailwind',
         color: 'pink-text-gradient'
       }
     ],
@@ -274,12 +279,43 @@ const projects = [
     live_demo_link: 'https://shopee-clone-eosin.vercel.app/'
   },
   {
+    name: 'Portfolio',
+    description:
+      'The purpose of this project is to build an online WebGL portfolio with the purpose of introducing myself and showcasing the skills and experience that I have gained. This portfolio utilizes modern technologies such as ReactJS, ThreeJS, TailwindCSS, and VietJS. If you would like to get in touch, you can visit the contact section.!',
+    tags: [
+      {
+        name: 'React',
+        color: 'blue-text-gradient'
+      },
+      {
+        name: 'ThreeJs',
+        color: 'yellow-text-gradient'
+      },
+      {
+        name: 'Tailwind',
+        color: 'pink-text-gradient'
+      },
+      {
+        name: 'Vitejs',
+        color: 'orange-text-gradient'
+      },
+      {
+        name: 'Typescript',
+        color: 'purple-text-gradient'
+      }
+    ],
+    image: portfolio,
+    source_code_link: 'https://github.com/hoapha1009/3d_portfolio',
+    live_demo_link: 'https://3d-portfolio-neon.vercel.app/'
+  },
+
+  {
     name: '3D Shirt AI',
     description:
       'This is a personal project that allows you to design your own T-shirt using a variety of color options and logo images. The project also includes a self-generated logo feature using DallE AI, adding a personal touch to your design. Built using React, Node.js, Three.js, and Tailwind CSS, this project provides a fun and creative way to design a unique T-shirt that you can easily download and share.',
     tags: [
       {
-        name: 'react',
+        name: 'React',
         color: 'blue-text-gradient'
       },
       {
@@ -287,15 +323,15 @@ const projects = [
         color: 'green-dark-text-gradient'
       },
       {
-        name: 'typescript',
+        name: 'Typescript',
         color: 'purple-text-gradient'
       },
       {
-        name: 'vitejs',
+        name: 'Vitejs',
         color: 'orange-text-gradient'
       },
       {
-        name: 'threejs',
+        name: 'ThreeJs',
         color: 'yellow-text-gradient'
       },
       {
@@ -303,7 +339,7 @@ const projects = [
         color: 'green-text-gradient'
       },
       {
-        name: 'tailwind',
+        name: 'Tailwind',
         color: 'pink-text-gradient'
       }
     ],
