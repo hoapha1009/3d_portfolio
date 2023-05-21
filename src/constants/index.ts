@@ -18,6 +18,7 @@ import {
   reactjs,
   redux,
   airbnb,
+  messenger,
   shopee,
   tailwind,
   typescript,
@@ -211,7 +212,45 @@ const testimonials = [
 
 const projects = [
   {
-    name: 'AirBnB',
+    name: 'Messenger Clone',
+    description:
+      'This is a repository for a Real-Time Messenger Clone: Next.js 13, React, Tailwind, Prisma, MongoDB, NextAuth, Pusher. Real-time messaging using Pusher. Message notifications and alerts. Google, Github, Credential authentication integration with NextAuth. Online/offline user status. File and image upload using Cloudinary CDN. Group chats and one-on-one messaging.',
+    tags: [
+      {
+        name: 'React',
+        color: 'blue-text-gradient'
+      },
+      {
+        name: 'NextJs 13',
+        color: 'green-text-gradient'
+      },
+      {
+        name: 'Typescript',
+        color: 'purple-text-gradient'
+      },
+      {
+        name: 'NextAuth',
+        color: 'orange-text-gradient'
+      },
+      {
+        name: 'Prisma',
+        color: 'yellow-text-gradient'
+      },
+      {
+        name: 'MongoDB',
+        color: 'pink-text-gradient'
+      },
+      {
+        name: 'Pusher',
+        color: 'orange-text-gradient'
+      }
+    ],
+    image: messenger,
+    source_code_link: 'https://github.com/hoapha1009/messenger-clone/',
+    live_demo_link: 'https://chat-app-chi-ashen.vercel.app/'
+  },
+  {
+    name: 'AirBnB Clone',
     description:
       'This is a repository for a Full Stack Airbnb Clone with Next.js 13 App Router: React, Tailwind, Prisma, MongoDB, NextAuth. Booking / Reservation system. Google, Github, credential authentication. Creation and deletion of listings, reservations, properties. Advanced search algorithm by category, date range, map location, number of guests, rooms and bathrooms. ',
     tags: [

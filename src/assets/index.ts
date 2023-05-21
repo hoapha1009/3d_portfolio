@@ -32,6 +32,7 @@ import dalle from './projects/dalle.png'
 import portfolio from './projects/portfolio.png'
 import shopee from './projects/shopee-clone.png'
 import airbnb from './projects/airbnb-clone.png'
+import messenger from './projects/messenger-clone.png'
 
 import dntc from './education/dntc.jpg'
 import ueh from './education/ueh.png'
@@ -68,6 +69,7 @@ export {
   nextjs,
   shopee,
   airbnb,
+  messenger,
   ueh,
   dntc,
   live,
